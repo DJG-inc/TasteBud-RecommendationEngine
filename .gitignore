@@ -1,0 +1,57 @@
+# Python virtual environments
+env/
+
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution/packaging
+build/
+dist/
+*.egg-info/
+
+# Machine learning model files (optional)
+*.h5  # TensorFlow or Keras models
+*.pt  # PyTorch models
+*.ckpt # Checkpoints
+
+# Jupyter Notebook checkpoints (if using notebooks for ML experiments)
+.ipynb_checkpoints/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# System files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Testing and coverage reports
+htmlcov/
+.tox/
+.coverage
+*.cover
+coverage.xml
+nosetests.xml
+pytest_cache/
+
+# gRPC-related generated files
+*.pb.go  # Go-generated protobuf files (if any)
+*.pb.py  # Python-generated protobuf files
+
+# Temporary files
+*.bak
+*.swp
+*.tmp
+
+# Config files for IDEs
+.vscode/
+.idea/
+
+# Ignore any credentials or secrets
+.env
+
+# Docker related files (if you're using Docker for local development)
+docker-compose.yml
+Dockerfile

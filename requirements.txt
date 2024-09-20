@@ -1,0 +1,24 @@
+# Machine Learning/Recommendation System Libraries
+tensorflow
+scikit-learn
+pandas
+numpy
+
+# gRPC Libraries
+grpcio
+grpcio-tools
+
+# Natural Language Processing (for ingredient extraction if needed)
+nltk
+spacy
+
+# Testing Libraries (TDD)
+pytest
+pytest-cov
+tox
+flake8
+
+# Other Utilities
+protobuf
+gunicorn
+requests
