@@ -1,57 +1,62 @@
-# Python virtual environments
+# Virtual Environment
 env/
 
-# Byte-compiled Python files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
+*.so
 
-# Distribution/packaging
-build/
-dist/
+# Unit test / coverage results
+*.cover
+*.py,cover
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+nosetests.xml
+pytest_cache/
+.cache/
+*.log
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Environment Variables
+.env
+
+# Python Package Files
+*.egg
 *.egg-info/
+dist/
+build/
+*.whl
 
-# Machine learning model files (optional)
-*.h5  # TensorFlow or Keras models
-*.pt  # PyTorch models
-*.ckpt # Checkpoints
-
-# Jupyter Notebook checkpoints (if using notebooks for ML experiments)
-.ipynb_checkpoints/
+# Data files (large datasets should not be tracked in Git)
+data/raw/
+data/processed/
 
 # Logs and databases
 *.log
 *.sqlite3
 
-# System files
-.DS_Store  # macOS
-Thumbs.db  # Windows
+# Docker
+*.env
+docker-compose.yml
+.dockerignore
 
-# Testing and coverage reports
-htmlcov/
-.tox/
-.coverage
-*.cover
-coverage.xml
-nosetests.xml
-pytest_cache/
+# OS-specific files (e.g., macOS, Windows)
+.DS_Store
+Thumbs.db
 
-# gRPC-related generated files
-*.pb.go  # Go-generated protobuf files (if any)
-*.pb.py  # Python-generated protobuf files
-
-# Temporary files
-*.bak
-*.swp
-*.tmp
-
-# Config files for IDEs
+# IDE Specific files
 .vscode/
 .idea/
 
-# Ignore any credentials or secrets
-.env
+# Miscellaneous
+*.bak
+*.tmp
 
-# Docker related files (if you're using Docker for local development)
-docker-compose.yml
-Dockerfile
+# Documentation build files (if using Sphinx)
+docs/_build/
