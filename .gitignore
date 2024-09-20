@@ -1,0 +1,62 @@
+# Virtual Environment
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Unit test / coverage results
+*.cover
+*.py,cover
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+nosetests.xml
+pytest_cache/
+.cache/
+*.log
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Environment Variables
+.env
+
+# Python Package Files
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Data files (large datasets should not be tracked in Git)
+data/raw/
+data/processed/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Docker
+*.env
+docker-compose.yml
+.dockerignore
+
+# OS-specific files (e.g., macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# IDE Specific files
+.vscode/
+.idea/
+
+# Miscellaneous
+*.bak
+*.tmp
+
+# Documentation build files (if using Sphinx)
+docs/_build/
