@@ -1,0 +1,42 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+    branches:
+      - develop
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # OS environment
+
+    steps:
+      # Step 1: Check out the repository's code
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Python (version 3.8)
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12.5'  # Define Python version
+
+      # Step 3: Install dependencies (from requirements.txt if it exists)
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      # Step 4: Run tests (this will grow as you add tests)
+      - name: Run tests
+        run: |
+          if [ -f pytest ]; then pytest; else echo "No tests to run"; fi
+
+      # Step 5: Lint the code (optional for now, grows as project grows)
+      - name: Lint code
+        run: |
+          pip install flake8
+          flake8 .
