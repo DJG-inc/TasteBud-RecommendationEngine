@@ -1,0 +1,47 @@
+{
+    "user_id": "string",
+    "personal_info": {
+      "first_name": "string",
+      "last_name": "string",
+      "email": "string"
+    },
+    "preferences": {
+      "dietary_restrictions": [
+        "string"
+      ],
+      "disliked_ingredients": [
+        "string"
+      ],
+      "favorite_cuisines": [
+        "string"
+      ]
+    },
+    "history": {
+      "order_history": [
+        {
+          "restaurant_id": "string",
+          "order_date": "YYYY-MM-DD",
+          "items_ordered": [
+            {
+              "menu_item_id": "string",
+              "rating": "float",
+              "comments": "string"
+            }
+          ]
+        }
+      ]
+    },
+    "recommendation_interactions": {
+      "feedback": [
+        {
+          "recommendation_id": "string",
+          "recommended_item_id": "string",
+          "user_feedback": {
+            "rating": "float",
+            "review": "string"
+          }
+        }
+      ]
+    }
+  }
+  

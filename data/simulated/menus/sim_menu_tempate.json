@@ -1,0 +1,67 @@
+{
+    "restaurant_id": "string",
+    "restaurant_info": {
+      "name": "string",
+      "location": "string",
+      "cuisine_type": "string"
+    },
+    "menu_sections": {
+      "appetizers": [
+        {
+          "menu_item_id": "string",
+          "name": "string",
+          "description": "string",
+          "price": "float",
+          "ingredients": [
+            "string"
+          ],
+          "dietary_tags": [
+            "string"
+          ]
+        }
+      ],
+      "main_courses": [
+        {
+          "menu_item_id": "string",
+          "name": "string",
+          "description": "string",
+          "price": "float",
+          "ingredients": [
+            "string"
+          ],
+          "dietary_tags": [
+            "string"
+          ]
+        }
+      ],
+      "desserts": [
+        {
+          "menu_item_id": "string",
+          "name": "string",
+          "description": "string",
+          "price": "float",
+          "ingredients": [
+            "string"
+          ],
+          "dietary_tags": [
+            "string"
+          ]
+        }
+      ],
+      "drinks": [
+        {
+          "menu_item_id": "string",
+          "name": "string",
+          "description": "string",
+          "price": "float",
+          "ingredients": [
+            "string"
+          ],
+          "dietary_tags": [
+            "string"
+          ]
+        }
+      ]
+    }
+  }
+  
